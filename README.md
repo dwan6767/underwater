@@ -6,7 +6,7 @@ The system allows a **Master** device to send messages to a **Slave**, request d
 
 ---
 
-## 🛠 Features
+##  Features
 - Works as **Master** or **Slave** (toggle via `#define ROLE_MASTER` / `ROLE_SLAVE`).  
 - Frequency-based protocol:  
   - Master sends @ **4 Hz**  
@@ -18,8 +18,8 @@ The system allows a **Master** device to send messages to a **Slave**, request d
 
 ---
 
-## ⚙️ How It Works
-- **Threshold Detection**:  
+##  How It Works
+- **Thereshold Checking**:  
   Input signals on `A0` are compared against `ADC_THRESHOLD`.  
 - **Tone Protocol**:  
   - Master sends a **4 Hz control tone** before transmitting data.  
@@ -30,23 +30,8 @@ The system allows a **Master** device to send messages to a **Slave**, request d
 - **Decoding**:  
   - Slave (or Master in reverse mode) samples analog input and matches measured frequencies to letters.
 
----
 
-## 📍 Pin Connections
-
-### Master
-- **RX (input)** → `A0`  
-- **TX (output)** → `D2` (ESP8266)  
-
-### Slave
-- **RX (input)** → `A0`  
-- **TX (output)** → `D8` (Arduino Nano/Uno, etc.)  
-
-*(Change pins in code if needed.)*
-
----
-
-## 📦 Setup
+## 📦Setup
 
 1. Clone or copy the code to your Arduino project.  
 2. In the source, select role:  
