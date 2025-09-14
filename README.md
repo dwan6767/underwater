@@ -5,6 +5,7 @@ This project implements a **communication protocol between two microcontrollers 
 The system allows a **Master** device to send messages to a **Slave**, request data, and receive acknowledgments through **frequency-based signaling**.
 
 ---
+![Master and Slave Nodes](docs/underwater.jpeg)
 
 ##  Features
 - Works as **Master** or **Slave** (toggle via `#define ROLE_MASTER` / `ROLE_SLAVE`).  
@@ -31,7 +32,7 @@ The system allows a **Master** device to send messages to a **Slave**, request d
   - Slave (or Master in reverse mode) samples analog input and matches measured frequencies to letters.
 
 
-## 📦Setup
+## Setup
 
 1. Clone or copy the code to your Arduino project.  
 2. In the source, select role:  
