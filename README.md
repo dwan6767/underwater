@@ -1,4 +1,4 @@
-# 📡 Master–Slave Communication via Tones
+# UnderWater wireless commuincation
 
 This project implements a **communication protocol between two microcontrollers (ESP8266/AVR/Arduino)** using **tone frequencies** over analog/digital pins.  
 
